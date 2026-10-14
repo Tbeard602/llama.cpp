@@ -1,0 +1,34 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "America/Phoenix"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "pip"
+    directory: "/gguf-py"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "America/Phoenix"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "gradle"
+    directory: "/examples/llama.android"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "America/Phoenix"
+    open-pull-requests-limit: 5
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "America/Phoenix"
+    open-pull-requests-limit: 5
